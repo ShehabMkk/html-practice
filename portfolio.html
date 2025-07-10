@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Shehab Mkk">
+  <meta name="description" content="Simple personal website for practicing HTML elements.">
+  <meta name="keywords" content="HTML, personal site, practice, learning, Shehab">
+  <meta http-equiv="refresh" content="120"> <!-- refresh every 120 seconds -->
+
+  <title>My Personal Site – Shehab</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+    nav {
+      background: #f0f0f0;
+      text-align: center;
+      padding: 0.5em 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2em 1em;
+      max-width: 800px;
+      margin: auto;
+    }
+    .profile-img {
+      display: block;
+      margin: 1em auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8em;
+      margin: 0.5em 0;
+      box-sizing: border-box;
+    }
+    form input[type="submit"] {
+      width: auto;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 0.8em 1.2em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 title="Welcome to my site">Welcome to My Personal Site</h1>
+    <p>A simple HTML practice project</p>
+  </header>
+
+  <nav>
+    <a href="#about" title="About Me section">About Me</a>
+    <a href="#gallery" title="Photo Gallery">Gallery</a>
+    <a href="#contact" title="Contact form">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img
+      src="https://sm.ign.com/ign_in/screenshot/default/sakamoto-days_9j2h.jpg"
+      alt="Profile Picture"
+      class="profile-img"
+      loading="lazy"
+    >
+    <p>Hello! I’m Shehab, a web‑design enthusiast practicing HTML basics. This site uses various HTML tags, attributes, and meta‑tags to demonstrate a simple, responsive layout.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="https://greggvanourek.com/wp-content/uploads/2023/08/Nature-path-by-water-trees-and-mountains-AdobeStock_291242770-scaled.jpeg" alt="Nature Image 1" loading="lazy">
+      <img src="https://arizent.brightspotcdn.com/dims4/default/7876f3f/2147483647/strip/true/crop/6417x4278+0+0/resize/825x550!/quality/90/?url=https%3A%2F%2Fsource-media-brightspot.s3.us-east-1.amazonaws.com%2Fd1%2F08%2F7f166549408db24c68104e19c362%2Fnyc-adobestock-341466014-editorial-use-only.jpeg" alt="City at Night" loading="lazy">
+      <img src="https://bernardmarr.com/wp-content/uploads/2022/04/The-10-Biggest-Technology-Trends-That-Will-Transform-The-Next-Decade.jpg" alt="Technology Scene" loading="lazy">
+      <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p.jpg" alt="Coffee Cup Close‑up" loading="lazy">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write me a message..." required></textarea>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shehab Mkk – All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
