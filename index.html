@@ -75,6 +75,32 @@
       cursor: pointer;
       padding: 0.8em 1.2em;
     }
+    .search-container {
+      margin-bottom: 1em;
+      display: flex;
+      gap: 0.5em;
+      flex-wrap: wrap;
+    }
+    .search-container input,
+    .search-container select {
+      padding: 0.5em;
+      font-size: 1em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 0.75em;
+      text-align: left;
+    }
+    th {
+      background-color: #efefef;
+    }
   </style>
 </head>
 
@@ -111,6 +137,71 @@
       <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p.jpg" alt="Coffee Cup Close‑up" loading="lazy">
     </div>
   </section>
+
+  <section id="projects">
+  <h2>Projects</h2>
+
+  <!-- Search form (non‑functional without a back‑end or script) -->
+  <form action="#" method="get" class="search-form">
+    <label for="column">Search by:</label>
+    <select id="column" name="column" required>
+      <option value="">— choose —</option>
+      <option value="name">Name</option>
+      <option value="year">Year</option>
+      <option value="category">Category</option>
+    </select>
+
+    <label for="query">Search term:</label>
+    <input
+      type="search"
+      id="query"
+      name="query"
+      placeholder="Type your search…"
+      required
+    >
+
+    <button type="submit">Search</button>
+  </form>
+
+  <!-- Projects table -->
+  <table id="projectsTable">
+    <caption>My Sample Projects</caption>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Year</th>
+        <th scope="col">Category</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Portfolio Website</td>
+        <td>2024</td>
+        <td>Web Design</td>
+      </tr>
+      <tr>
+        <td>Task Manager App</td>
+        <td>2023</td>
+        <td>JavaScript</td>
+      </tr>
+      <tr>
+        <td>Data Visualizer</td>
+        <td>2025</td>
+        <td>Python</td>
+      </tr>
+      <tr>
+        <td>Responsive Blog</td>
+        <td>2024</td>
+        <td>HTML/CSS</td>
+      </tr>
+      <tr>
+        <td>Chatbot Demo</td>
+        <td>2025</td>
+        <td>AI/ML</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
   <section id="contact">
     <h2>Contact Me</h2>
